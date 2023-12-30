@@ -26,7 +26,7 @@ const Blog = () => {
           />
           <Article
             imgUrl={blog04}
-            date="Oct 19,2023"
+            date="Oct 19, 2023"
             text="DALL·E 3 is now available in ChatGPT Plus and Enterprise"
           />
           <Article
