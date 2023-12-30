@@ -1,0 +1,142 @@
+.gpt4__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.gpt4__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+.gpt4__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.gpt4__header-content p {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-text);
+
+    margin-top: 1.5rem;
+}
+
+.gpt4__header-buttons {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.gpt4__header-buttons button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 1.5rem;
+}
+
+.gpt4__header-buttons button:hover {
+
+    color: #252525;
+    background: white;
+
+}
+
+.gpt4__header-buttons p {
+    text-decoration: underline;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+}
+
+.gpt4__header-buttons p:hover {
+    color: #a9a9a9;
+}
+
+.gpt4__header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gpt4__header-image img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1050px) {
+    .gpt4__header {
+        flex-direction: column;
+    }
+
+    .gpt4__header-content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .gpt4__header-content h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .gpt4__header-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .gpt4__header-content__people {
+        flex-direction: column;
+    }
+
+    .gpt4__header-content__people p {
+        margin: 0;
+    }
+
+    .gpt4__header-content__input input,
+    .gpt4__header-content__input button {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .gpt4__header-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .gpt4__header-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .gpt4__header-content__input input,
+    .gpt4__header-content__input button {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
