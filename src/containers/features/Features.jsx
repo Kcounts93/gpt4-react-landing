@@ -28,7 +28,7 @@ const Features = () => {
       <div className="gpt4__features-heading">
         <p>More on ChatGPT-4</p>
         <h1 className="gradient__text">
-          We continue to strive to create technologies that empowers everyone
+          We strive to create technologies that empower everyone through AI.
         </h1>
         <button type="button">
           Get started
