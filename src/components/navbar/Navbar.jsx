@@ -1,8 +1,84 @@
-import React from "react";
+import React, { useState } from "react";
+import { RiMenu3Line, RiCloseLine, RiArrowRightUpLine } from "react-icons/ri";
+import logo from "../../assets/openai.svg";
 import "./navbar.css";
 
 const Navbar = () => {
-  return <div>Navbar</div>;
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  return (
+    <div className="gpt4__navbar">
+      <div className="gpt4__navbar-links">
+        <div className="gpt4__navbar-links_logo">
+          <img src={logo} />
+        </div>
+        <div className="gpt4__navbar-links_container">
+          <p>
+            <a href="#home">Home</a>
+          </p>
+          <p>
+            <a href="#wgpt4">About GPT-4</a>
+          </p>
+          <p>
+            <a href="#possibility">Open AI</a>
+          </p>
+          <p>
+            <a href="#features">Case Studies</a>
+          </p>
+          <p>
+            <a href="#blog">Library</a>
+          </p>
+        </div>
+      </div>
+      <div className="gpt4__navbar-sign">
+        <p>Log in</p>
+        <button type="button">
+          Try ChatGPT
+          <RiArrowRightUpLine size={20} />
+        </button>
+      </div>
+      <div className="gpt4__navbar-menu">
+        {toggleMenu ? (
+          <RiCloseLine
+            color="#fff"
+            size={27}
+            onClick={() => setToggleMenu(false)}
+          />
+        ) : (
+          <RiMenu3Line
+            color="#fff"
+            size={27}
+            onClick={() => setToggleMenu(true)}
+          />
+        )}
+        {toggleMenu && (
+          <div className="gpt4__navbar-menu_container scale-up-center">
+            <div className="gpt4__navbar-menu_container-links">
+              <p>
+                <a href="#home">Home</a>
+              </p>
+              <p>
+                <a href="#wgpt4">What is gpt4?</a>
+              </p>
+              <p>
+                <a href="#possibility">Features</a>
+              </p>
+              <p>
+                <a href="#features">OpenAI</a>
+              </p>
+              <p>
+                <a href="#blog">Blog</a>
+              </p>
+            </div>
+            <div className="gpt4__navbar-menu_container-links-sign">
+              <p>Log in</p>
+              <button type="button">Try ChatGPT</button>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;
