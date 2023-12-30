@@ -5,7 +5,7 @@
 
   --gradient-text: linear-gradient(89.97deg, #ffffff 1.84%, #c3c3c3 102.67%);
   --accent-bar: #51da4c;
-  
+  --gradient-bar: linear-gradient(89.97deg, #111111 1.84%, #141414 102.67%);
   --color-bg: #000000;
   --color-footer : #031B34;
   --color-blog: #042c54;
