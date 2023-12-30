@@ -42,11 +42,16 @@
 
 .gpt4__about-heading p {
     font-family: var(--font-family);
-    font-weight: 500;
+    font-weight: 300;
     font-size: 16px;
     line-height: 30px;
-    color: var(--color-subtext);
+    color: white;
+    text-decoration: underline;
     cursor: pointer;
+}
+
+.gpt4__about-heading p:hover {
+    color:#ffffff9d;
 }
 
 .gpt4__about-container {
