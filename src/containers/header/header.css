@@ -83,6 +83,7 @@
 }
 
 .gpt4__header-image img {
+    border-radius: 20px;
     width: 100%;
     height: auto;
 }
