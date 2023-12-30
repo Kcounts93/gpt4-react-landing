@@ -17,16 +17,16 @@ const Navbar = () => {
             <a href="#home">Home</a>
           </p>
           <p>
-            <a href="#wgpt4">About GPT-4</a>
+            <a href="#about">What is GPT-4?</a>
           </p>
           <p>
-            <a href="#possibility">Open AI</a>
+            <a href="#features">Features</a>
           </p>
           <p>
-            <a href="#features">Case Studies</a>
+            <a href="#demogpt">Opportunities</a>
           </p>
           <p>
-            <a href="#blog">Library</a>
+            <a href="#blog">Blog</a>
           </p>
         </div>
       </div>
@@ -58,13 +58,13 @@ const Navbar = () => {
                 <a href="#home">Home</a>
               </p>
               <p>
-                <a href="#wgpt4">What is gpt4?</a>
+                <a href="#about">What is GPT-4?</a>
               </p>
               <p>
-                <a href="#possibility">Features</a>
+                <a href="#features">Features</a>
               </p>
               <p>
-                <a href="#features">OpenAI</a>
+                <a href="#demogpt">Opportunities</a>
               </p>
               <p>
                 <a href="#blog">Blog</a>
